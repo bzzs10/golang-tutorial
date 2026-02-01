@@ -36,11 +36,21 @@ func main() {
 	UserArray = append(	//append - команда для добавления нового элемента в слайс
 		UserArray,
 		User{
-		Name: "Герман"
+		Name: "Герман",
 		Rating: 8.8,
 		Premium: true,
-		}
+		}, //запятая
 	)
+
+	UserArray = append(
+		UserArray,
+		User{
+		Name: "Ваня",
+		Rating: 5.6,
+		Premium: false,
+		},
+	)
+
 	fmt.Println("len и cap после")
 	fmt.Println("len",len(UserArray))
 	fmt.Println("cap",cap(UserArray))
@@ -65,20 +75,3 @@ func main() {
 	}
 	fmt.Println("") 	// просто пустой отступ
 }
-
-
-// при запуске файла, выйдает данную ошибку: 
-
-// Сбой выполнения программы go.exe: Политика управления приложениями
-// заблокировала этот файлстрока:1 знак:1
-// + go run main.go
-// + go run main.go
-// + ~~~~~~~~~~~~~~.
-// строка:1 знак:1
-// + go run main.go
-// + ~~~~~~~~~~~~~~
-//     + CategoryInfo          : ResourceUnavailable: (:) [],
-//    ApplicationFailedException
-//     + FullyQualifiedErrorId : NativeCommandFailed
-
-// поэтому я перехожу снова на линукс! i use LINUX, btw!
