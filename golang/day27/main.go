@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/k0kubun/pp"
 )
 
@@ -30,20 +31,20 @@ func main() {
 		},
 	}
 	fmt.Println("len и cap до")
-	fmt.Println("len",len(UserArray))
-	fmt.Println("cap",cap(UserArray))
+	fmt.Println("len", len(UserArray))
+	fmt.Println("cap", cap(UserArray))
 
 	UserArray = append(
 		UserArray,
 		User{
-		Name: "Герман"
-		Rating: 8.8,
-		Premium: true,
-		}
+			Name:    "Герман",
+			Rating:  8.8,
+			Premium: true,
+		},
 	)
 	fmt.Println("len и cap после")
-	fmt.Println("len",len(UserArray))
-	fmt.Println("cap",cap(UserArray))
+	fmt.Println("len", len(UserArray))
+	fmt.Println("cap", cap(UserArray))
 
 	fmt.Println("до")
 	fmt.Println("--------")
