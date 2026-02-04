@@ -14,7 +14,7 @@ func main() {
 		fmt.Print("Введите комануд: ")
 
 		if ok := scanner.Scan(); !ok {
-			fmt.Println("Ошиюка ввода")
+			fmt.Println("Ошибка ввода")
 			return
 		}
 
